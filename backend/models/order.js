@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 
 
 const orderSchema = new mongoose.Schema({
@@ -53,3 +54,5 @@ const orderSchema = new mongoose.Schema({
       default: 'pending'
     }
   });
+
+  module.exports = mongoose.model('Order', orderSchema);

@@ -49,9 +49,3 @@ const inventorySchema = new mongoose.Schema({
     reference: String // Order ID or adjustment reference
   }]
 });
-
-
-module.exports = {
-  Inventory: mongoose.model('Inventory', inventorySchema),
-  Order: mongoose.model('Order', orderSchema)
-};
