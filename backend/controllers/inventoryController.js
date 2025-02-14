@@ -2,7 +2,7 @@ const Inventory = require('../models/inventory');
 
 const inventoryController = {
     // Get all inventory items
-    getAllItems: async ( res) => {
+    getAllItems: async (req,res) => {
         try {
             const items = await Inventory.find({});
             res.status(200).json(items);
